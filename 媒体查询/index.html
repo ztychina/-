@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+        #div0{
+            width: 100%;
+            heigth: 500px;
+        }
+        #div0 div{
+            float: left;
+            height: 100px;
+        }
+        @media screen and (min-device-width: 0px) and (max-device-width: 200px){
+            #div0 div{
+                width: 33.3%;
+            }
+            #div0 div:nth-child(1){
+                background-color: green;
+            }
+            #div0 div:nth-child(2){
+                background-color: blue;
+            }
+            #div0 div:nth-child(3){
+                background-color: red;
+            }
+        }
+        @media screen and (min-device-width: 201px) and (max-device-width: 500px){
+            #div0{
+                background-color: red;
+            }
+            #div0 div{
+                width: 50%;
+            }
+            #div0 div:nth-child(1){
+                background-color: green;
+            }
+            #div0 div:nth-child(2){
+                background-color: blue;
+            }
+            #div0 div:nth-child(3){
+                background-color: red;
+            }
+        }
+        @media screen and (min-device-width: 501px){
+            #div0{
+                background-color: blue;
+            }
+            #div0 div{
+                width: 100%;
+            }
+            #div0 div:nth-child(1){
+                background-color: green;
+            }
+            #div0 div:nth-child(2){
+                background-color: blue;
+            }
+            #div0 div:nth-child(3){
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

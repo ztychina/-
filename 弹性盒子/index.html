@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒子</title>
+    <style>
+        #div0{
+            width: 500px;
+            heigth: 200px;
+            background-color: violet;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #div0 div{
+            width: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            flex: 0 0 100px;
+        }
+        #div0 div:nth-child(1){
+            flex: 0 1 50px;
+        }
+        #div0 div:nth-child(1){
+            flex: 0 1 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>

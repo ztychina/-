@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid3</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px 50px 100px;
+            grid-template-rows: repeat(auto-fill, 200px);
+            column-gap: 10px;
+            row-gap: 15px;
+            justify-items: stretch;
+        }
+        .item{
+            border: 1px solid darkcyan;
+            text-align: center;
+            vertical-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+    </div>
+</body>
+</html>

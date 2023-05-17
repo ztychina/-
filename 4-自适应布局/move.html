@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>move</title>
+    <style>
+        #div0{
+            display: flex;
+        }
+        #div0 div:first-child{
+            background-color: yellow;
+            flex: 0 0 50px;
+        }
+        #div0 div:nth-child(2){
+            background-color: red;
+            flex: 1 1 auto;
+        }
+        #div0 div:nth-child(3){
+            background-color: blue;
+            flex: 0 0 50px;
+        }
+        @media (min-device-width: 400px) and (max-device-width: 700px) {
+            #div0 div:first-child{
+                background-color: red;
+                flex: 0 0 50px;
+            }
+            #div0 div:nth-child(2){
+                background-color: blue;
+                flex: 1 1 auto;
+            }
+            #div0 div:nth-child(3){
+                background-color: red;
+                flex: 0 0 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

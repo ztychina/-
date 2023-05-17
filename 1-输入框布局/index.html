@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入框布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div0{
+            width: 250px;
+            display: flex;
+            border: 1px solid gray;
+        }
+        #div0 label{
+            flex: 1;
+            background-color: ghostwhite;
+            font-family: '楷体';
+            text-align: center;
+        }
+        #div0 input{
+            border: none;
+            outline: none;
+        }
+        #div0 label:nth-child(2){
+            flex: 0 0 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <label>name</label>
+        <input type="text">
+        <label>go</label>
+    </div>
+</body>
+</html>

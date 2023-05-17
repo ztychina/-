@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>长表单布局</title>
+    <style>
+        #form div{
+            display: flex;
+            height: 50px;
+            align-items: flex-start;
+            flex: 0 0 30px;
+        }
+        #form div label{
+            flex: 0 0 100px;
+            text-align: right;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="form">
+            <div>
+                <label>姓名: </label>
+                <input type="text">
+            </div>
+            <div>
+                <label>请输入密码: </label>
+                <input type="text">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
